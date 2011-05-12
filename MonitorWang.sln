@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Agent", "MonitorWang.Agent\MonitorWang.Agent.csproj", "{AEC03173-038A-4676-8D6E-2B6B2A432FB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Core", "MonitorWang.Core\MonitorWang.Core.csproj", "{1E988D93-4FCB-483A-9AF5-E78AA54726E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licences", "Licences", "{0B79E5C5-9A42-4498-997A-0145CA9048F7}"
+	ProjectSection(SolutionItems) = preProject
+		Licences\glue-licence-2.0.txt = Licences\glue-licence-2.0.txt
+		Licences\glue-notice.txt = Licences\glue-notice.txt
+		Licences\growl.license.txt = Licences\growl.license.txt
+		Licences\log4net.license.txt = Licences\log4net.license.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{EA8BC6D3-64E5-4969-8E8D-D2FBB6A63B4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Tests", "MonitorWang.Tests\MonitorWang.Tests.csproj", "{C674FC5C-123B-4322-A429-AA11F8DCE3FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{43D41193-C2E0-47C4-B271-111FA250F0D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6B7002CE-AF6A-4519-B084-3ABC731536D0}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Common\AssemblyVersion.cs = Build\Common\AssemblyVersion.cs
+		Build\Common\CommonAssemblyInfo.cs = Build\Common\CommonAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldHealthCheck", "HelloWorldHealthCheck\HelloWorldHealthCheck.csproj", "{C29806C2-94CD-4A93-A6C0-AD967C6BD3E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Contrib.Checks.LogParser", "MonitorWang.Contrib.Checks.LogParser\MonitorWang.Contrib.Checks.LogParser.csproj", "{78FFB1FC-6330-4512-B871-0263FA629309}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{A6DC44DC-A955-4772-8CD9-EB06C702AA9B}"
+	ProjectSection(SolutionItems) = preProject
+		TestData\LogParserTest.csv = TestData\LogParserTest.csv
+		TestData\LogParserTest.txt = TestData\LogParserTest.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Contrib.Checks.Owl", "MonitorWang.Contrib.Checks.Owl\MonitorWang.Contrib.Checks.Owl.csproj", "{F09837B7-BAE1-4541-B1A7-A201562F5796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Core.Interfaces", "MonitorWang.Core.Interfaces\MonitorWang.Core.Interfaces.csproj", "{00D403EA-5310-469E-B0FB-70A8834236E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Core.Interfaces.Castle", "MonitorWang.Core.Interfaces.Castle\MonitorWang.Core.Interfaces.Castle.csproj", "{8DC025AE-205C-4FC4-B93C-3C3A6989EE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Core.Interfaces.Magnum", "MonitorWang.Core.Interfaces.Magnum\MonitorWang.Core.Interfaces.Magnum.csproj", "{F156DC1C-7553-4BB0-898E-12F6D2EB7CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.AppStats.Demo", "MonitorWang.AppStats.Demo\MonitorWang.AppStats.Demo.csproj", "{9F50DAC6-6DD2-484E-9EC7-9CFAE38A2264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEC03173-038A-4676-8D6E-2B6B2A432FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC03173-038A-4676-8D6E-2B6B2A432FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC03173-038A-4676-8D6E-2B6B2A432FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC03173-038A-4676-8D6E-2B6B2A432FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E988D93-4FCB-483A-9AF5-E78AA54726E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E988D93-4FCB-483A-9AF5-E78AA54726E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E988D93-4FCB-483A-9AF5-E78AA54726E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E988D93-4FCB-483A-9AF5-E78AA54726E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C674FC5C-123B-4322-A429-AA11F8DCE3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C674FC5C-123B-4322-A429-AA11F8DCE3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C674FC5C-123B-4322-A429-AA11F8DCE3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C674FC5C-123B-4322-A429-AA11F8DCE3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29806C2-94CD-4A93-A6C0-AD967C6BD3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29806C2-94CD-4A93-A6C0-AD967C6BD3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29806C2-94CD-4A93-A6C0-AD967C6BD3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29806C2-94CD-4A93-A6C0-AD967C6BD3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78FFB1FC-6330-4512-B871-0263FA629309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78FFB1FC-6330-4512-B871-0263FA629309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78FFB1FC-6330-4512-B871-0263FA629309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78FFB1FC-6330-4512-B871-0263FA629309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F09837B7-BAE1-4541-B1A7-A201562F5796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09837B7-BAE1-4541-B1A7-A201562F5796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09837B7-BAE1-4541-B1A7-A201562F5796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09837B7-BAE1-4541-B1A7-A201562F5796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D403EA-5310-469E-B0FB-70A8834236E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D403EA-5310-469E-B0FB-70A8834236E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D403EA-5310-469E-B0FB-70A8834236E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D403EA-5310-469E-B0FB-70A8834236E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC025AE-205C-4FC4-B93C-3C3A6989EE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC025AE-205C-4FC4-B93C-3C3A6989EE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC025AE-205C-4FC4-B93C-3C3A6989EE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC025AE-205C-4FC4-B93C-3C3A6989EE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F156DC1C-7553-4BB0-898E-12F6D2EB7CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F156DC1C-7553-4BB0-898E-12F6D2EB7CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F156DC1C-7553-4BB0-898E-12F6D2EB7CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F156DC1C-7553-4BB0-898E-12F6D2EB7CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F50DAC6-6DD2-484E-9EC7-9CFAE38A2264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F50DAC6-6DD2-484E-9EC7-9CFAE38A2264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F50DAC6-6DD2-484E-9EC7-9CFAE38A2264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F50DAC6-6DD2-484E-9EC7-9CFAE38A2264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B7002CE-AF6A-4519-B084-3ABC731536D0} = {43D41193-C2E0-47C4-B271-111FA250F0D9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

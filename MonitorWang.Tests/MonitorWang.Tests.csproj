@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C674FC5C-123B-4322-A429-AA11F8DCE3FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MonitorWang.Tests</RootNamespace>
+    <AssemblyName>MonitorWang.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Castle\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Growl.Connector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=980c2339411be384, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Growl\libraries\Growl.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="Growl.CoreLibrary, Version=2.0.0.0, Culture=neutral, PublicKeyToken=13e59d82e007b064, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Growl\libraries\Growl.CoreLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Magnum, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Magnum\Magnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Moq\NET35\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.3.9345, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="StoryQ, Version=2.0.4.12787, Culture=neutral, PublicKeyToken=90a7d07ba39412de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\StoryQ\StoryQ.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Build\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\Build\Common\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Activities\GeckoboardDataService.Linechart.Specs.cs" />
+    <Compile Include="Activities\GeckoboardDataService.Linechart.Domain.cs" />
+    <Compile Include="Activities\GeckoboardDataService.Piechart.Specs.cs" />
+    <Compile Include="Bdd\BddFeature.cs" />
+    <Compile Include="Bdd\BddTestDomain.cs" />
+    <Compile Include="Bdd\GeckoboardDataServiceDomain.cs" />
+    <Compile Include="Checks\WindowServiceStartup.Domain.cs" />
+    <Compile Include="Checks\WindowServiceStartup.Specs.cs" />
+    <Compile Include="Checks\WindowServiceState.Domain.cs" />
+    <Compile Include="Checks\WindowServiceState.Specs.cs" />
+    <Compile Include="CmdLineArgTests.cs" />
+    <Compile Include="Growl\NotificationFinaliserTests.cs" />
+    <Compile Include="Bdd\HealthCheckDomain.cs" />
+    <Compile Include="Mocks\MockMessenger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Timers\TwentyFourSevenTimerTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonitorWang.Agent\MonitorWang.Agent.csproj">
+      <Project>{AEC03173-038A-4676-8D6E-2B6B2A432FB5}</Project>
+      <Name>MonitorWang.Agent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorWang.Contrib.Checks.LogParser\MonitorWang.Contrib.Checks.LogParser.csproj">
+      <Project>{78FFB1FC-6330-4512-B871-0263FA629309}</Project>
+      <Name>MonitorWang.Contrib.Checks.LogParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorWang.Core.Interfaces\MonitorWang.Core.Interfaces.csproj">
+      <Project>{00D403EA-5310-469E-B0FB-70A8834236E7}</Project>
+      <Name>MonitorWang.Core.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorWang.Core\MonitorWang.Core.csproj">
+      <Project>{1E988D93-4FCB-483A-9AF5-E78AA54726E7}</Project>
+      <Name>MonitorWang.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

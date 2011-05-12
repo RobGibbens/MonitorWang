@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E988D93-4FCB-483A-9AF5-E78AA54726E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MonitorWang.Core</RootNamespace>
+    <AssemblyName>MonitorWang.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=1.1.0.188, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AutoMapper\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Castle\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Castle\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Growl.Connector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=980c2339411be384, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Growl\libraries\Growl.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="Growl.CoreLibrary, Version=2.0.0.0, Culture=neutral, PublicKeyToken=13e59d82e007b064, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Growl\libraries\Growl.CoreLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Magnum, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Magnum\Magnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceModel.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WCF-REST\Microsoft.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b9a188c8922137c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\RavenDb\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus, Version=2.5.0.0, Culture=neutral, PublicKeyToken=349438b4be075135, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NServiceBus\v2.5\NServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core, Version=2.5.0.0, Culture=neutral, PublicKeyToken=349438b4be075135, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NServiceBus\v2.5\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.ObjectBuilder.CastleWindsor, Version=2.5.0.0, Culture=neutral, PublicKeyToken=349438b4be075135, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NServiceBus\v2.5\containers\NServiceBus.ObjectBuilder.CastleWindsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client-3.5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\RavenDb\Raven.Client-3.5.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\SQLite\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=2.0.38.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\SQLite\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Build\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\Build\Common\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AppStats\AppStatsEngine.cs" />
+    <Compile Include="AppStats\AppStatsConfig.cs" />
+    <Compile Include="AppStats\AppStatsConfigBuilder.cs" />
+    <Compile Include="AppStats\AppStatsEvent.cs" />
+    <Compile Include="AppStats\IAppStatsEventOperations.cs" />
+    <Compile Include="AppStats\AppStatsEventExtensions.cs" />
+    <Compile Include="AppStats\IAppStatsPublisher.cs" />
+    <Compile Include="Bus\AppStatNServiceBusPublisher.cs" />
+    <Compile Include="Bus\AppStatsNServiceBus.cs" />
+    <Compile Include="Bus\BusBuilder.cs" />
+    <Compile Include="Bus\BusPublisherConfig.cs" />
+    <Compile Include="Bus\BusStartups.cs" />
+    <Compile Include="Bus\BusToPublisherBridges.cs" />
+    <Compile Include="Bus\BusZeroConfig.cs" />
+    <Compile Include="Bus\HealthCheckAgentStartNotification.cs" />
+    <Compile Include="Bus\HealthCheckResultNotification.cs" />
+    <Compile Include="Checks\OracleScalarCheck.cs" />
+    <Compile Include="Checks\UrlPingCheck.cs" />
+    <Compile Include="Checks\WindowsServiceStartupCheck.cs" />
+    <Compile Include="Checks\ScalarCheckBase.cs" />
+    <Compile Include="Checks\SqlScalarCheck.cs" />
+    <Compile Include="Checks\FolderInfoCheck.cs" />
+    <Compile Include="Checks\FileInfoCheck.cs" />
+    <Compile Include="Checks\MsmqQueueInfoCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Checks\MsmqQueueNotEmptyCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Checks\WindowsServiceStateCheck.cs" />
+    <Compile Include="Checks\WmiProcessRunningCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Container.cs" />
+    <Compile Include="Containers\IContainer.cs" />
+    <Compile Include="Containers\InterceptorBase.cs" />
+    <Compile Include="Containers\WindsorContainer.cs" />
+    <Compile Include="Database\Oracle\OracleStatement.cs" />
+    <Compile Include="Database\Oracle\OracleAdhocCommand.cs" />
+    <Compile Include="Database\AdhocCommandBase.cs" />
+    <Compile Include="Database\SmartConnectionString.cs" />
+    <Compile Include="Database\TableSchema.cs" />
+    <Compile Include="Database\SQLite\SQLiteConfiguration.cs" />
+    <Compile Include="Database\SQLite\SQLitePublishers.cs" />
+    <Compile Include="Database\SQLite\SQLiteStatement.cs" />
+    <Compile Include="Database\SQLite\SqlServerAdhocCommand.cs" />
+    <Compile Include="Database\SqlServer\SqlServerAdhocCommand.cs" />
+    <Compile Include="Database\SqlServer\SqlServerConfiguration.cs" />
+    <Compile Include="Database\SqlServer\SqlServerPublishers.cs" />
+    <Compile Include="Database\SqlServer\SqlServerStatement.cs" />
+    <Compile Include="Database\SqlStatementBase.cs" />
+    <Compile Include="Filters\EventTypeFilter.cs" />
+    <Compile Include="Geckoboard\Caching.cs" />
+    <Compile Include="Geckoboard\GeckoboardDataServiceImpl.Piechart.cs" />
+    <Compile Include="Geckoboard\GeckoboardDataServiceImpl.Linechart.cs" />
+    <Compile Include="Geckoboard\GeckoboardDataServiceImpl.cs" />
+    <Compile Include="Geckoboard\IGeckoboardDataServiceImpl.cs" />
+    <Compile Include="Geckoboard\QueryString.cs" />
+    <Compile Include="Growl\GrowlNotificationInterceptorBase.cs" />
+    <Compile Include="Growl\GrowlNotificationFinalisers.cs" />
+    <Compile Include="Growl\IGrowlNotificationFinaliser.cs" />
+    <Compile Include="InterceptorSelector.cs" />
+    <Compile Include="Filters\ResultFilterBase.cs" />
+    <Compile Include="Filters\SuccessFilter.cs" />
+    <Compile Include="Geckoboard\ColourPicker.cs" />
+    <Compile Include="Geckoboard\DataProvider\SqlGeckoDataProviderBase.cs" />
+    <Compile Include="Geckoboard\DataProvider\SqlServerGeckoDataProvider.cs" />
+    <Compile Include="Geckoboard\DataProvider\DataEntities.cs" />
+    <Compile Include="Geckoboard\DataProvider\SQLiteGeckoDataProvider.cs" />
+    <Compile Include="Geckoboard\Entities\GeckoComparison.cs" />
+    <Compile Include="Geckoboard\Entities\GeckoData.cs" />
+    <Compile Include="Geckoboard\Entities\GeckoDataItem.cs" />
+    <Compile Include="Geckoboard\Entities\GeckoLineChart.cs" />
+    <Compile Include="Geckoboard\GeckoboardDataService.cs" />
+    <Compile Include="Geckoboard\DataProvider\IGeckoboardDataProvider.cs" />
+    <Compile Include="Geckoboard\IGeckoboardDataService.cs" />
+    <Compile Include="Geckoboard\GeckoboardDataServiceActivity.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Growl\GrowlStartup.cs" />
+    <Compile Include="Growl\GrowlConnection.cs" />
+    <Compile Include="Growl\GrowlConfiguration.cs" />
+    <Compile Include="Growl\IGrowlConnection.cs" />
+    <Compile Include="Hosts\PluginHostBase.cs" />
+    <Compile Include="Geckoboard\Entities\GeckoMeter.cs" />
+    <Compile Include="Geckoboard\Entities\GeckoPieChart.cs" />
+    <Compile Include="Loaders\ContainerLoaders.cs" />
+    <Compile Include="Loaders\HealthCheckBindingLoader.cs" />
+    <Compile Include="Loaders\HealthCheckLoader.cs" />
+    <Compile Include="Loaders\PluginExtensions.cs" />
+    <Compile Include="Loaders\ScanningLoaders.cs" />
+    <Compile Include="Loaders\ProfileLoader.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Messenger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bus\BusHealthCheckPublishers.cs" />
+    <Compile Include="Publishers\PublisherBase.cs" />
+    <Compile Include="Schedulers\DateTimeExtensions.cs" />
+    <Compile Include="Schedulers\FakeNow.cs" />
+    <Compile Include="Schedulers\HealthCheckTwentyFourSevenScheduler.cs" />
+    <Compile Include="Schedulers\HealthCheckIntervalScheduler.cs" />
+    <Compile Include="Schedulers\IntervalSchedulerBase.cs" />
+    <Compile Include="Schedulers\IntervalSchedulerConfig.cs" />
+    <Compile Include="Schedulers\TwentyFourSevenTimer.cs" />
+    <Compile Include="SerialisationHelper.cs" />
+    <Compile Include="Growl\GrowlHealthCheckPublishers.cs" />
+    <Compile Include="SmartLocation.cs" />
+    <Compile Include="TypeDiscovery.cs" />
+    <Compile Include="Wcf\IMonitorWang.cs" />
+    <Compile Include="Wcf\WcfPublisherConfiguration.cs" />
+    <Compile Include="Wcf\WcfPublishers.cs" />
+    <Compile Include="Wcf\WcfServiceActivity.cs" />
+    <Compile Include="Wcf\MonitorWangService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Growl\agent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Growl\growl.monitor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonitorWang.Core.Interfaces.Castle\MonitorWang.Core.Interfaces.Castle.csproj">
+      <Project>{8DC025AE-205C-4FC4-B93C-3C3A6989EE19}</Project>
+      <Name>MonitorWang.Core.Interfaces.Castle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorWang.Core.Interfaces.Magnum\MonitorWang.Core.Interfaces.Magnum.csproj">
+      <Project>{F156DC1C-7553-4BB0-898E-12F6D2EB7CA9}</Project>
+      <Name>MonitorWang.Core.Interfaces.Magnum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorWang.Core.Interfaces\MonitorWang.Core.Interfaces.csproj">
+      <Project>{00D403EA-5310-469E-B0FB-70A8834236E7}</Project>
+      <Name>MonitorWang.Core.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\RavenDb\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
