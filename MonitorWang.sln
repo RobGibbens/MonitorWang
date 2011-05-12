@@ -1,10 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Agent", "MonitorWang.Agent\MonitorWang.Agent.csproj", "{AEC03173-038A-4676-8D6E-2B6B2A432FB5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Core", "MonitorWang.Core\MonitorWang.Core.csproj", "{1E988D93-4FCB-483A-9AF5-E78AA54726E7}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licences", "Licences", "{0B79E5C5-9A42-4498-997A-0145CA9048F7}"
 	ProjectSection(SolutionItems) = preProject
 		Licences\glue-licence-2.0.txt = Licences\glue-licence-2.0.txt
@@ -15,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licences", "Licences", "{0B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{EA8BC6D3-64E5-4969-8E8D-D2FBB6A63B4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Tests", "MonitorWang.Tests\MonitorWang.Tests.csproj", "{C674FC5C-123B-4322-A429-AA11F8DCE3FB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{43D41193-C2E0-47C4-B271-111FA250F0D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6B7002CE-AF6A-4519-B084-3ABC731536D0}"
@@ -25,15 +19,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6B7002
 		Build\Common\CommonAssemblyInfo.cs = Build\Common\CommonAssemblyInfo.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldHealthCheck", "HelloWorldHealthCheck\HelloWorldHealthCheck.csproj", "{C29806C2-94CD-4A93-A6C0-AD967C6BD3E1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Contrib.Checks.LogParser", "MonitorWang.Contrib.Checks.LogParser\MonitorWang.Contrib.Checks.LogParser.csproj", "{78FFB1FC-6330-4512-B871-0263FA629309}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{A6DC44DC-A955-4772-8CD9-EB06C702AA9B}"
 	ProjectSection(SolutionItems) = preProject
 		TestData\LogParserTest.csv = TestData\LogParserTest.csv
 		TestData\LogParserTest.txt = TestData\LogParserTest.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Agent", "MonitorWang.Agent\MonitorWang.Agent.csproj", "{AEC03173-038A-4676-8D6E-2B6B2A432FB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Core", "MonitorWang.Core\MonitorWang.Core.csproj", "{1E988D93-4FCB-483A-9AF5-E78AA54726E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Tests", "MonitorWang.Tests\MonitorWang.Tests.csproj", "{C674FC5C-123B-4322-A429-AA11F8DCE3FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldHealthCheck", "HelloWorldHealthCheck\HelloWorldHealthCheck.csproj", "{C29806C2-94CD-4A93-A6C0-AD967C6BD3E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Contrib.Checks.LogParser", "MonitorWang.Contrib.Checks.LogParser\MonitorWang.Contrib.Checks.LogParser.csproj", "{78FFB1FC-6330-4512-B871-0263FA629309}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorWang.Contrib.Checks.Owl", "MonitorWang.Contrib.Checks.Owl\MonitorWang.Contrib.Checks.Owl.csproj", "{F09837B7-BAE1-4541-B1A7-A201562F5796}"
 EndProject

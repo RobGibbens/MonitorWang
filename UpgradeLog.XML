@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MonitorWang">
+</Property><Property Name="Solution File" Value="C:\Development\MonitorWang1.0.8\MonitorWang.sln">
+</Property><Property Name="Date" Value="Thursday, May 12, 2011">
+</Property><Property Name="Time" Value="15:07 PM">
+</Property></Properties><Event ErrorLevel="0" Project="MonitorWang.Agent" Source="MonitorWang.Agent\MonitorWang.Agent.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Agent" Source="MonitorWang.Agent\MonitorWang.Agent.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core" Source="MonitorWang.Core\MonitorWang.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Core" Source="MonitorWang.Core\MonitorWang.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Tests" Source="MonitorWang.Tests\MonitorWang.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Tests" Source="MonitorWang.Tests\MonitorWang.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HelloWorldHealthCheck" Source="HelloWorldHealthCheck\HelloWorldHealthCheck.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HelloWorldHealthCheck" Source="HelloWorldHealthCheck\HelloWorldHealthCheck.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Contrib.Checks.LogParser" Source="MonitorWang.Contrib.Checks.LogParser\MonitorWang.Contrib.Checks.LogParser.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Contrib.Checks.LogParser" Source="MonitorWang.Contrib.Checks.LogParser\MonitorWang.Contrib.Checks.LogParser.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Contrib.Checks.Owl" Source="MonitorWang.Contrib.Checks.Owl\MonitorWang.Contrib.Checks.Owl.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Contrib.Checks.Owl" Source="MonitorWang.Contrib.Checks.Owl\MonitorWang.Contrib.Checks.Owl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core.Interfaces" Source="MonitorWang.Core.Interfaces\MonitorWang.Core.Interfaces.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Core.Interfaces" Source="MonitorWang.Core.Interfaces\MonitorWang.Core.Interfaces.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core.Interfaces.Castle" Source="MonitorWang.Core.Interfaces.Castle\MonitorWang.Core.Interfaces.Castle.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Core.Interfaces.Castle" Source="MonitorWang.Core.Interfaces.Castle\MonitorWang.Core.Interfaces.Castle.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core.Interfaces.Magnum" Source="MonitorWang.Core.Interfaces.Magnum\MonitorWang.Core.Interfaces.Magnum.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.Core.Interfaces.Magnum" Source="MonitorWang.Core.Interfaces.Magnum\MonitorWang.Core.Interfaces.Magnum.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.AppStats.Demo" Source="MonitorWang.AppStats.Demo\MonitorWang.AppStats.Demo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MonitorWang.AppStats.Demo" Source="MonitorWang.AppStats.Demo\MonitorWang.AppStats.Demo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MonitorWang.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MonitorWang.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Agent" Source="MonitorWang.Agent\MonitorWang.Agent.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core" Source="MonitorWang.Core\MonitorWang.Core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Tests" Source="MonitorWang.Tests\MonitorWang.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="HelloWorldHealthCheck" Source="HelloWorldHealthCheck\HelloWorldHealthCheck.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Contrib.Checks.LogParser" Source="MonitorWang.Contrib.Checks.LogParser\MonitorWang.Contrib.Checks.LogParser.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Contrib.Checks.Owl" Source="MonitorWang.Contrib.Checks.Owl\MonitorWang.Contrib.Checks.Owl.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core.Interfaces" Source="MonitorWang.Core.Interfaces\MonitorWang.Core.Interfaces.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core.Interfaces.Castle" Source="MonitorWang.Core.Interfaces.Castle\MonitorWang.Core.Interfaces.Castle.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.Core.Interfaces.Magnum" Source="MonitorWang.Core.Interfaces.Magnum\MonitorWang.Core.Interfaces.Magnum.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MonitorWang.AppStats.Demo" Source="MonitorWang.AppStats.Demo\MonitorWang.AppStats.Demo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
